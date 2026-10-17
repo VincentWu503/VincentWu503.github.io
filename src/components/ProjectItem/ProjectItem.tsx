@@ -1,7 +1,6 @@
 import { Fragment } from "react";
 import type { Project } from "../../types";
 import { assetUrl } from "../../utils/assetUrl";
-// @ts-expect-error CSS side-effect imports are handled by the bundler.
 import "./ProjectItem.css";
 
 interface ProjectItemProps {

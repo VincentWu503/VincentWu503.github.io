@@ -1,5 +1,4 @@
 import type { ButtonHTMLAttributes } from "react";
-// @ts-expect-error CSS side-effect imports are handled by the bundler.
 import "./PillButton.css";
 
 interface PillButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {

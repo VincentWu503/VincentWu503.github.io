@@ -1,6 +1,5 @@
 import Section from "../../components/Section/Section";
 import ProjectList from "../../components/ProjectList/ProjectList";
-// @ts-expect-error CSS side-effect imports are handled by the bundler.
 import "./ProjectsSection.css";
 import { Projects } from "../../data/projects";
 import type { Project } from "../../types";

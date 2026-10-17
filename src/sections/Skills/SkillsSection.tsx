@@ -1,8 +1,6 @@
-// Section must be imported before SkillCard so its CSS loads first (see SkillCard.css)
 import Section from "../../components/Section/Section";
 import SkillCard from "../../components/SkillCard/SkillCard";
 import { skills } from "../../data/skills";
-// @ts-expect-error CSS side-effect imports are handled by the bundler.
 import "./SkillsSection.css";
 
 export default function SkillsSection() {

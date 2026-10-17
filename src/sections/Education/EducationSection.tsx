@@ -1,6 +1,5 @@
 import Section from "../../components/Section/Section";
 import { assetUrl } from "../../utils/assetUrl";
-// @ts-expect-error CSS side-effect imports are handled by the bundler.
 import "./EducationSection.css";
 
 export default function EducationSection() {

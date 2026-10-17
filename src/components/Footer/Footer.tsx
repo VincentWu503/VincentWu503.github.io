@@ -1,6 +1,5 @@
 import type { ContactLink } from "../../types";
 import PillButton from "../PillButton/PillButton";
-// @ts-expect-error CSS side-effect imports are handled by the bundler.
 import "./Footer.css";
 
 interface FooterProps {

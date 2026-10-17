@@ -1,7 +1,6 @@
 import Section from "../../components/Section/Section";
 import PillButton from "../../components/PillButton/PillButton";
 import { assetUrl } from "../../utils/assetUrl";
-// @ts-expect-error CSS side-effect imports are handled by the bundler.
 import "./AboutSection.css";
 
 export default function AboutSection() {

@@ -1,5 +1,4 @@
 import type { ReactNode } from "react";
-// @ts-expect-error CSS side-effect imports are handled by the bundler.
 import "./Section.css";
 
 interface SectionProps {
