@@ -35,6 +35,19 @@
   padding-bottom: 1em;
 }
 
+.project-image-carousel {
+  width: clamp(25vw, 35vw, 40vw);
+  max-width: 100%;
+}
+
+.project-carousel-image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
 /* PROJECT TECHSTACK SPAN HASHTAG*/
 .techstack-tag {
   border: max(1px, 0.1em) solid var(--accent);
@@ -48,5 +61,9 @@
 @media only screen and (max-width: 992px) {
   .project-list-content {
     flex-direction: column-reverse;
+  }
+
+  .project-image-carousel {
+    width: clamp(50vw, 60vw, 80vw);
   }
 }

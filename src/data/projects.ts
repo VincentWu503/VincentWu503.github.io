@@ -13,7 +13,7 @@ export const Projects: Project[] = [
       'Deployed backend services and Next.js websites to production environment via VPS and Vercel respectively.',
     ],
     techstacks: ['Next.js', 'Node.js', 'Express.js', 'PostgreSQL'],
-    imagePaths: ['images/project1.png'],
+    imagePaths: ['images/project1.png', 'images/project2.png', 'images/project3.png'],
     sourceCodeLink:
       'https://github.com/stars/VincentWu503/lists/capstone-project',
   },
