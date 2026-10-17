@@ -30,7 +30,7 @@ nav.nav-scrolled {
 
 #text-logo {
   font-weight: 600;
-  font-size: clamp(min(6vw, 2rem), 2vw + 0.1rem, max(8vw, 3rem));
+  font-size: clamp(min(4.8vw, 1.6rem), 1.6vw + 0.08rem, max(6.4vw, 2.4rem));
 }
 
 .nav-lists li {
@@ -56,7 +56,7 @@ nav.nav-scrolled {
 .nav-button {
   background: transparent;
   border: none;
-  font-size: 1.8rem;
+  font-size: 1.44rem;
   color: var(--text);
   cursor: pointer;
   transition: transform 0.3s ease;
