@@ -5,24 +5,24 @@ export const contactLinks: ContactLink[] = [
     id: 'whatsapp',
     label: 'WhatsApp',
     icon: 'fa-brands fa-whatsapp',
-    href: 'https://wa.me2',
+    href: 'https://wa.me/6282384308922',
   },
   {
     id: 'linkedin',
     label: 'LinkedIn',
     icon: 'fa-brands fa-linkedin',
-    message: "I haven't set up my LinkedIn profile yet. Coming soon :)",
+    href: 'https://www.linkedin.com/in/vincent-vincent-873276325',
   },
   {
     id: 'github',
     label: 'GitHub',
     icon: 'fa-brands fa-github',
-    href: 'https://github.com/',
+    href: 'https://github.com/VincentWu503',
   },
   {
     id: 'instagram',
     label: 'Instagram',
     icon: 'fa-brands fa-instagram',
-    href: 'https://www.instagram.com',
+    href: 'https://www.instagram.com/justviiin__/',
   },
 ];
