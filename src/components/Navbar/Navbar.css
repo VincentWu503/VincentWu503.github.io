@@ -1,0 +1,109 @@
+/* NAVBAR */
+nav {
+    background-color: var(--bg);
+    color: var(--text);
+    padding-bottom: 1.25rem;
+    padding-top: 1.25rem;
+    transition: 0.4s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid;
+    border-bottom-color: #040f162c;
+}
+
+nav.nav-scrolled {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    box-shadow: 0 3px 4px -1px rgba(0, 0, 0, 0.10);
+}
+
+.nav-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#text-logo {
+    font-weight: 600;
+    font-size: clamp(min(6vw, 2rem), 2vw + 0.1rem, max(8vw, 3rem));
+}
+
+.nav-lists li {
+    list-style: none;
+}
+
+.nav-lists {
+    display: flex;
+    gap: 4rem;
+    padding-left: 0;
+}
+
+/* current active/shown page */
+.nav-link.active {
+    font-weight: 600;
+    text-decoration-line: underline;
+    text-underline-offset: 0.8rem;
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--accent);
+}
+
+/* HAMBURGER BAR */
+.nav-button {
+    background: transparent;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--text);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.nav-button-container {
+    display: flex;
+    gap: 3vw;
+}
+
+#hamburger {
+    display: none;
+}
+
+#hamburger.open {
+    transform: rotate(90deg);
+}
+
+@media only screen and (max-width: 768px) {
+    #hamburger {
+        display: block;
+    }
+
+    /* HAMBURGER LIST */
+    .nav-lists {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg);
+        gap: 1.5rem;
+        max-height: 0;
+        overflow: hidden;
+        padding: 0;
+        transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+        border-bottom: 1px solid transparent;
+    }
+
+    .nav-lists.show {
+        max-height: 400px;
+        padding: 1rem 0 1.5rem;
+        padding-left: 0;
+        padding-top: 0;
+        border-bottom-color: #040f162c;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    }
+}

@@ -1,0 +1,39 @@
+/* EDUCATION SECTION */
+.education-content {
+    margin: var(--base-spacing-y) 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "school-name school-name"
+        "school-activity-info school-logo";
+}
+
+.school-name {
+    grid-area: school-name;
+}
+
+.school-activity-info {
+    grid-area: school-activity-info;
+}
+
+.school-logo {
+    grid-area: school-logo;
+}
+
+.school-activity-info,
+.school-logo {
+    padding: calc(var(--base-spacing-y) / 1.6) 0;
+}
+
+@media only screen and (max-width: 992px) {
+    .education-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+            "school-name"
+            "school-logo"
+            "school-activity-info";
+    }
+}

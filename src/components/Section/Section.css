@@ -1,0 +1,50 @@
+/* UNTUK GARIS BAWAH SETIAP JUDUL */
+.decorated-title {
+    text-decoration-line: underline;
+    text-underline-offset: 0.8rem;
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--accent);
+    margin: calc(var(--base-spacing-y) / 1.6) 0;
+}
+
+/* CONTENT SECTION */
+.content {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    * {
+        color: #E8F1F2;
+    }
+}
+
+.content:nth-child(even) {
+    background-color: var(--bg);
+    * {
+        color: var(--text);
+    }
+}
+
+.section-container {
+    width: 70%;
+    margin: var(--base-spacing-y) 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .section-container {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .section-container {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .section-container {
+        width: 80%;
+    }
+}

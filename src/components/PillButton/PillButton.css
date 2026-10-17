@@ -1,0 +1,48 @@
+/* PILL BUTTON */
+.pill {
+    color: #FBFBFF;
+    font-weight: 500;
+    font-size: clamp(0.9rem, 1vw + 0.5rem, 1.25rem);
+    padding-inline: clamp(1.2em, 2vw + 1em, 2em);
+    padding-block: clamp(0.5em, 1vw + 0.3em, 0.8em);
+    line-height: 1.25;
+    border-radius: 999em;
+    background-color: var(--accent);
+    border: none;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.pill:hover {
+    cursor: pointer;
+    transform: translateY(-0.35em);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: #00afe0;
+}
+
+/* icon-only variant (footer social buttons) */
+.logo {
+    color: var(--accent-text);
+    padding: 0;
+    font-size: clamp(1.5rem, 3vw + 0.5rem, 2rem);
+    background-color: transparent;
+}
+
+.logo:hover {
+    background-color: transparent;
+    box-shadow: none;
+    transform: none;
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 992px) {
+    .pill {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .pill.logo {
+        display: inline-flex;
+        margin: 0;
+        padding-inline: clamp(0.3em, 1vw + 0.5em, 0.6em);
+    }
+}

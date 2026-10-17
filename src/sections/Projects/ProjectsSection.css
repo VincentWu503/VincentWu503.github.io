@@ -1,0 +1,7 @@
+.projects-status {
+    margin: calc(var(--base-spacing-y) / 1.6) 0;
+}
+
+.projects-status .pill {
+    margin-top: 1rem;
+}
