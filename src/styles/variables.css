@@ -1,29 +1,29 @@
 /* THEME TOKENS (light default, dark via body.dark-mode) */
 :root {
-    --primary-font: 'Montserrat';
-    --bg: #FBFBFF;
-    --text: #040F16;
-    /* actions palette */
-    --primary: #0B4F6C;
-    --primary-text: #FBFBFF;
-    --accent: #01BAEF;
-    --accent-text: #040F16;
-    --danger: #B80C09;
-    --danger-text: #FBFBFF;
-    --hr-color: #2c2c2d2c;
-    --base-spacing-y: 3.6vh;
-    --base-spacing-x: 4vw;
+  --primary-font: 'Montserrat';
+  --bg: #fbfbff;
+  --text: #040f16;
+  /* actions palette */
+  --primary: #0b4f6c;
+  --primary-text: #fbfbff;
+  --accent: #01baef;
+  --accent-text: #040f16;
+  --danger: #b80c09;
+  --danger-text: #fbfbff;
+  --hr-color: #2c2c2d2c;
+  --base-spacing-y: 3.6vh;
+  --base-spacing-x: 4vw;
 }
 
 body.dark-mode {
-    --bg: #071820;
-    --text: #E8F1F2;
-    /* actions palette */
-    --primary: #0B4F6C;
-    --primary-text: #FBFBFF;
-    --accent: #01BAEF;
-    --accent-text: #FBFBFF;
-    --danger: #B80C09;
-    --danger-text: #FBFBFF;
-    --hr-color: #f9f9f92d;
+  --bg: #071820;
+  --text: #e8f1f2;
+  /* actions palette */
+  --primary: #0b4f6c;
+  --primary-text: #fbfbff;
+  --accent: #01baef;
+  --accent-text: #fbfbff;
+  --danger: #b80c09;
+  --danger-text: #fbfbff;
+  --hr-color: #f9f9f92d;
 }

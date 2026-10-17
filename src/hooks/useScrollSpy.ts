@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 export function useScrollSpy(ids: string[], offset = 100): string | null {
   const [activeId, setActiveId] = useState<string | null>(ids[0] ?? null);
@@ -21,11 +21,11 @@ export function useScrollSpy(ids: string[], offset = 100): string | null {
     };
 
     onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("resize", onScroll);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
     return () => {
-      window.removeEventListener("scroll", onScroll);
-      window.removeEventListener("resize", onScroll);
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
     };
   }, [ids, offset]);
 

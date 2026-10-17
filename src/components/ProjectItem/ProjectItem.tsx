@@ -1,7 +1,7 @@
-import { Fragment } from "react";
-import type { Project } from "../../types";
-import { assetUrl } from "../../utils/assetUrl";
-import "./ProjectItem.css";
+import { Fragment } from 'react';
+import type { Project } from '../../types';
+import { assetUrl } from '../../utils/assetUrl';
+import './ProjectItem.css';
 
 interface ProjectItemProps {
   project: Project;
@@ -9,14 +9,19 @@ interface ProjectItemProps {
 }
 
 export default function ProjectItem({ project, index }: ProjectItemProps) {
-  const { title, description, contributions, techstacks, imagePaths, sourceCodeLink } = project;
+  const {
+    title,
+    description,
+    contributions,
+    techstacks,
+    imagePaths,
+    sourceCodeLink,
+  } = project;
 
   return (
     <div className="project-list">
       <div>
-        <h3>
-          {title}
-        </h3>
+        <h3>{title}</h3>
       </div>
       <div className="project-list-content">
         <div className="project-content-text">
@@ -34,7 +39,7 @@ export default function ProjectItem({ project, index }: ProjectItemProps) {
           <div className="techstack-tag-container">
             {techstacks.map((tech) => (
               <Fragment key={tech}>
-                <span className="techstack-tag">#{tech}</span>{" "}
+                <span className="techstack-tag">#{tech}</span>{' '}
               </Fragment>
             ))}
           </div>

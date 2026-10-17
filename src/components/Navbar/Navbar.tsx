@@ -1,9 +1,9 @@
-import { useMemo, useState } from "react";
-import type { NavLinkItem } from "../../types";
-import { useDarkMode } from "../../hooks/useDarkMode";
-import { useScrolled } from "../../hooks/useScrolled";
-import { useScrollSpy } from "../../hooks/useScrollSpy";
-import "./Navbar.css";
+import { useMemo, useState } from 'react';
+import type { NavLinkItem } from '../../types';
+import { useDarkMode } from '../../hooks/useDarkMode';
+import { useScrolled } from '../../hooks/useScrolled';
+import { useScrollSpy } from '../../hooks/useScrollSpy';
+import './Navbar.css';
 
 interface NavbarProps {
   brand: string;
@@ -17,18 +17,18 @@ export default function Navbar({ brand, links }: NavbarProps) {
   const activeId = useScrollSpy(useMemo(() => links.map((l) => l.id), [links]));
 
   return (
-    <nav className={scrolled ? "nav-scrolled" : undefined}>
+    <nav className={scrolled ? 'nav-scrolled' : undefined}>
       <div className="nav-container">
         <a href="#" className="pinyon-script-regular" id="text-logo">
           {brand}
         </a>
 
-        <ul className={`nav-lists${menuOpen ? " show" : ""}`}>
+        <ul className={`nav-lists${menuOpen ? ' show' : ''}`}>
           {links.map((link) => (
             <li className="nav-list-item" key={link.id}>
               <a
                 href={`#${link.id}`}
-                className={`nav-link${activeId === link.id ? " active" : ""}`}
+                className={`nav-link${activeId === link.id ? ' active' : ''}`}
                 onClick={() => setMenuOpen(false)}
               >
                 {link.label}
@@ -41,7 +41,7 @@ export default function Navbar({ brand, links }: NavbarProps) {
           <button
             id="hamburger"
             type="button"
-            className={`nav-button${menuOpen ? " open" : ""}`}
+            className={`nav-button${menuOpen ? ' open' : ''}`}
             aria-label="Toggle navigation menu"
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen((open) => !open)}

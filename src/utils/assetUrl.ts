@@ -3,5 +3,5 @@
  * so it keeps working when Vite's `base` is not "/".
  */
 export function assetUrl(path: string): string {
-  return `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
+  return `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
 }

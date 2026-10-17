@@ -1,43 +1,48 @@
-*,::after,::before {
-    margin: 0;
-    padding: 0;
-    line-height: 1.5em;
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
 }
 
 .pinyon-script-regular {
-    font-family: "Pinyon Script", cursive;
+  font-family: 'Pinyon Script', cursive;
 }
 
 /* UKURAN TEKS RESPONSIF */
 h1 {
-    font-size: clamp(1.2rem, 3vw + 1rem, 3rem);
+  font-size: clamp(1.2rem, 3vw + 1rem, 3rem);
 }
 
-a, p, h2, h3 {
-    font-size: clamp(min(2.8vw, 1rem), 2vw + 0.1rem, max(1.2vw, 1rem));
-    color: var(--text);
+a,
+p,
+h2,
+h3 {
+  font-size: clamp(min(2.8vw, 1rem), 2vw + 0.1rem, max(1.2vw, 1rem));
+  color: var(--text);
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 html {
-    height: 100%;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  height: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    box-sizing: inherit;
-    text-align: justify;
-    font-family: var(--primary-font);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-sizing: inherit;
+  text-align: justify;
+  font-family: var(--primary-font);
 }
 
 /* React mount node must not break body's flex column (footer sticks to bottom) */
 #root {
-    display: contents;
+  display: contents;
 }

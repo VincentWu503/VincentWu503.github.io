@@ -1,6 +1,6 @@
-import type { ContactLink } from "../../types";
-import PillButton from "../PillButton/PillButton";
-import "./Footer.css";
+import type { ContactLink } from '../../types';
+import PillButton from '../PillButton/PillButton';
+import './Footer.css';
 
 interface FooterProps {
   owner: string;
@@ -30,7 +30,9 @@ export default function Footer({ owner, contacts }: FooterProps) {
           ))}
         </div>
       </div>
-      <p>&copy; {new Date().getFullYear()} {owner}. All rights reserved.</p>
+      <p>
+        &copy; {new Date().getFullYear()} {owner}. All rights reserved.
+      </p>
     </footer>
   );
 }

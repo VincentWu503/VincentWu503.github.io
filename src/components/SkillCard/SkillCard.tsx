@@ -1,6 +1,6 @@
-import { assetUrl } from "../../utils/assetUrl";
-import type { Skill } from "../../types";
-import "./SkillCard.css";
+import { assetUrl } from '../../utils/assetUrl';
+import type { Skill } from '../../types';
+import './SkillCard.css';
 
 export default function SkillCard({ title, image, alt }: Skill) {
   return (
