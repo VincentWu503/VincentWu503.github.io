@@ -3,6 +3,7 @@ import type { NavLinkItem } from "../../types";
 import { useDarkMode } from "../../hooks/useDarkMode";
 import { useScrolled } from "../../hooks/useScrolled";
 import { useScrollSpy } from "../../hooks/useScrollSpy";
+// @ts-expect-error CSS side-effect imports are handled by the bundler.
 import "./Navbar.css";
 
 interface NavbarProps {

@@ -1,5 +1,6 @@
 import type { Project } from "../../types";
 import ProjectItem from "../ProjectItem/ProjectItem";
+// @ts-expect-error CSS side-effect imports are handled by the bundler.
 import "./ProjectList.css";
 
 interface ProjectListProps {
