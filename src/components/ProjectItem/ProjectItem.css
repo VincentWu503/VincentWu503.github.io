@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding-bottom: calc(var(--base-spacing-y) / 1.6);
+    padding-bottom: calc(var(--base-spacing-y) / 1.2);
     border-bottom: 1px solid var(--hr-color);
     gap: var(--base-spacing-x);
 }

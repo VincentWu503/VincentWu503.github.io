@@ -15,7 +15,7 @@ export default function ProjectItem({ project, index }: ProjectItemProps) {
     <div className="project-list">
       <div>
         <h3>
-          {index + 1}. {title}
+          {title}
         </h3>
       </div>
       <div className="project-list-content">
@@ -40,6 +40,7 @@ export default function ProjectItem({ project, index }: ProjectItemProps) {
           </div>
         </div>
         <div className="image-container">
+          {/* will be changed to caurosel in the future */}
           {imagePaths.map((path) => (
             <img
               key={path}
