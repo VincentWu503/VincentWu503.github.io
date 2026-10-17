@@ -39,6 +39,10 @@
     "isolatedModules": true,
     "noUncheckedSideEffectImports": false,
     "moduleDetection": "force",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   }
 }
