@@ -51,7 +51,7 @@
   padding: 0.4em 0.8em;
   border-radius: 999em;
   font-weight: bold;
-  font-size: clamp(0.8rem, 1.2vw + 0.2rem, 0.6rem);
+  font-size: clamp(min(2.4vw, 0.88rem), 1.2vw + 0.2rem, 0.6rem);
 }
 
 @media only screen and (max-width: 992px) {
