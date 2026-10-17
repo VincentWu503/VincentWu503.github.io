@@ -20,10 +20,6 @@
   text-decoration-line: underline;
 }
 
-.project-link a {
-  font-size: clamp(min(1.6vw, 0.48rem), 1.6vw + 0.08rem, max(0.96vw, 0.8rem));
-}
-
 .project-content-text {
   display: flex;
   justify-content: space-between;

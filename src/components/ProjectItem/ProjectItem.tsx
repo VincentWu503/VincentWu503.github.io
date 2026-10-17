@@ -100,7 +100,7 @@ export default function ProjectItem({ project, index }: ProjectItemProps) {
               </CarouselContent>
               <CarouselPrevious className="left-2" />
               <CarouselNext className="right-2" />
-              <div className="py-2 text-center text-sm text-muted-foreground">
+              <div className="py-2 text-sm md:text-base  text-center text-muted-foreground ">
                 <p></p>
                 Slide {current} of {count}
               </div>

@@ -31,9 +31,9 @@ export default function AboutSection() {
           </div>
           <div>
             <PillButton
-              onClick={() => window.open(assetUrl('cv/535240039_CV.pdf'))}
+              onClick={() => window.open('https://docs.google.com/document/d/1lWvPlUZfo2RsrOL1LT2DplGeUv8NI3xS/edit?usp=sharing&ouid=101140162851750292172&rtpof=true&sd=true')}
             >
-              Download CV
+              See My CV
             </PillButton>
           </div>
         </div>
