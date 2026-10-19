@@ -63,3 +63,9 @@
     width: clamp(50vw, 60vw, 80vw);
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .project-image-carousel {
+    width: clamp(75vw, 80vw, 90vw);
+  }
+}

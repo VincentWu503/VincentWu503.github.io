@@ -13,11 +13,10 @@ export default function AboutSection() {
           </div>
           <div>
             <p>
-              My name is Vincent. I'm a fifth semester Informatics Engineering
-              undergraduate student at Universitas Tarumanagara who likes to
-              explore new things. My current field of interests in Information
-              Technology are Software Engineering and Data Science. Check out
-              this portfolio source code{' '}
+              My name is Vincent. I'm a Third year Computer Science/Informatics Engineering student at Universitas Tarumanagara
+              with a strong interest in software engineering, full-stack web development, specifically backend development, and machine learning.
+              Committed to learn, adapt, and explore new tools or frameworks in the tech industry.
+              Check out this portfolio source code{' '}
               <a
                 href="https://github.com/VincentWu503/portfolio-web"
                 className="underlined-link"
