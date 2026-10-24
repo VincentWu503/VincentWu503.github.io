@@ -54,6 +54,10 @@
   font-size: clamp(min(2.4vw, 0.88rem), 1.2vw + 0.2rem, 0.6rem);
 }
 
+.techstack-tag-container {
+  margin: 1.36em 0;
+}
+
 @media only screen and (max-width: 992px) {
   .project-list-content {
     flex-direction: column-reverse;
